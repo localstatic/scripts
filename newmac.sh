@@ -50,6 +50,30 @@ brew cask install --appdir="/Applications" firefox
 
 # -------
 
+echo "Installing cask: Tower ..."
+
+brew cask install --appdir="/Applications" tower
+
+# -------
+
+echo "Installing cask: DiffMerge ..."
+
+brew cask install --appdir="/Applications" diffmerge
+
+# -------
+
+echo "Installing cask: Vagrant ..."
+
+brew cask install --appdir="/Applications" vagrant
+
+# -------
+
+echo "Installing cask: VirtualBox ..."
+
+brew cask install --appdir="/Applications" virtualbox
+
+# -------
+
 echo "Setting up basic user configuration ..."
 
 if [ ! -e ~/.ssh/id_rsa ]; then

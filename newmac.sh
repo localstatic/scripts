@@ -8,10 +8,13 @@ echo "If you don't blindly trust him, you may want to edit this script before ru
 echo
 echo "For App Store stuff, log in and install them via the Purchases tab."
 echo
-echo "Some of the stuff installed by this script requires Xcode, so be sure to install that before continuing."
+echo "IMPORTANT: Some of the stuff installed by this script requires Xcode, so"
+echo "           be sure to install that before continuing."
 echo
 echo
 read -p "press Enter to begin"
+echo
+echo
 
 # ========== #
 

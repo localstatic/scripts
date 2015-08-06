@@ -25,50 +25,50 @@ brew install caskroom/cask/brew-cask
 
 # -------
 
-echo "Installing MacVim ..."
+echo "Installing from Homebrew: MacVim ..."
 
 brew install macvim
 brew linkapps macvim
 
 # -------
 
-echo "Installing cask: iTerm2 ..."
+echo "Installing from Homebrew Cask: iTerm2 ..."
 
 brew cask install --appdir="/Applications" iterm2
 
 # -------
 
-echo "Installing cask: Google Chrome ..."
+echo "Installing from Homebrew Cask: Google Chrome ..."
 
 brew cask install --appdir="/Applications" google-chrome
 
 # -------
 
-echo "Installing cask: Mozilla Firefox ..."
+echo "Installing from Homebrew Cask: Mozilla Firefox ..."
 
 brew cask install --appdir="/Applications" firefox
 
 # -------
 
-echo "Installing cask: Tower ..."
+echo "Installing from Homebrew Cask: Tower ..."
 
 brew cask install --appdir="/Applications" tower
 
 # -------
 
-echo "Installing cask: DiffMerge ..."
+echo "Installing from Homebrew Cask: DiffMerge ..."
 
 brew cask install --appdir="/Applications" diffmerge
 
 # -------
 
-echo "Installing cask: Vagrant ..."
+echo "Installing from Homebrew Cask: Vagrant ..."
 
 brew cask install --appdir="/Applications" vagrant
 
 # -------
 
-echo "Installing cask: VirtualBox ..."
+echo "Installing from Homebrew Cask: VirtualBox ..."
 
 brew cask install --appdir="/Applications" virtualbox
 

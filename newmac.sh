@@ -74,6 +74,18 @@ brew cask install --appdir="/Applications" virtualbox
 
 # -------
 
+echo "Installing NPM ..."
+
+brew install npm
+
+# -------
+
+echo "Installing from NPM: JSON Lint ..."
+
+npm install --global jsonlint
+
+# -------
+
 echo "Setting up basic user configuration ..."
 
 if [ ! -e ~/.ssh/id_rsa ]; then

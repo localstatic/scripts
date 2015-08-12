@@ -18,6 +18,12 @@ echo
 
 # ========== #
 
+echo "Installing Composer ..."
+
+curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin
+
+# -------
+
 echo "Installing Homebrew ..."
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

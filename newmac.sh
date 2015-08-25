@@ -56,6 +56,12 @@ brew cask install --appdir="/Applications" firefox
 
 # -------
 
+echo "Installing from Homebrew Cask: Flash plugin ..."
+
+brew cask install --appdir="/Applications" flash
+
+# -------
+
 echo "Installing from Homebrew Cask: Tower ..."
 
 brew cask install --appdir="/Applications" tower

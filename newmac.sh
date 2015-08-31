@@ -38,6 +38,18 @@ brew linkapps macvim
 
 # -------
 
+echo "Installing from Homebrew: Git ..."
+
+brew install git
+
+# -------
+
+echo "Installing from Homebrew: Bash Completion ..."
+
+brew install bash-completion
+
+# -------
+
 echo "Installing from Homebrew Cask: iTerm2 ..."
 
 brew cask install --appdir="/Applications" iterm2

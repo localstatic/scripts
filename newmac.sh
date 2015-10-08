@@ -152,5 +152,11 @@ git clone git@github.com:localstatic/vimrc.git ~/Configs/vimrc
 
 # -------
 
+echo "Installing Composer package: PHP CodeSniffer"
+
+composer global require "squizlabs/php_codesniffer=*"
+
+# -------
+
 echo "Finished."
 

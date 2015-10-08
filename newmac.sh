@@ -38,6 +38,12 @@ brew linkapps macvim
 
 # -------
 
+echo "Installing from Homebrew: The Silver Searcher (ag) ..."
+
+brew install the_silver_searcher
+
+# -------
+
 echo "Installing from Homebrew: Git ..."
 
 brew install git

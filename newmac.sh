@@ -98,6 +98,12 @@ brew cask install --appdir="/Applications" vagrant
 
 # -------
 
+echo "Installing from Homebrew Cask: Vagrant Manager ..."
+
+brew cask install --appdir="/Applications" vagrant-manager
+
+# -------
+
 echo "Installing from Homebrew Cask: VirtualBox ..."
 
 brew cask install --appdir="/Applications" virtualbox

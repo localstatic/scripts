@@ -110,6 +110,12 @@ brew cask install --appdir="/Applications" virtualbox
 
 # -------
 
+echo "Installing from Homebrew Cask: KeePassX ..."
+
+brew cask install --appdir="/Applications" keepassx
+
+# -------
+
 echo "Installing NPM ..."
 
 brew install npm

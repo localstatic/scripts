@@ -31,13 +31,6 @@ brew tap caskroom/cask
 
 # -------
 
-echo "Installing from Homebrew: MacVim ..."
-
-brew install macvim
-brew linkapps macvim
-
-# -------
-
 echo "Installing from Homebrew: The Silver Searcher (ag) ..."
 
 brew install the_silver_searcher
@@ -53,6 +46,12 @@ brew install git
 echo "Installing from Homebrew: Bash Completion ..."
 
 brew install bash-completion
+
+# -------
+
+echo "Installing from Homebrew Cask: MacVim ..."
+
+brew cask install macvim
 
 # -------
 

@@ -91,6 +91,12 @@ brew cask install diffmerge
 
 # -------
 
+echo "Installing from Homebrew Cask: Dash ..."
+
+brew cask install dash
+
+# -------
+
 echo "Installing from Homebrew Cask: Vagrant ..."
 
 brew cask install vagrant

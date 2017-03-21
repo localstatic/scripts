@@ -37,6 +37,12 @@ brew install the_silver_searcher
 
 # -------
 
+echo "Installing from Homebrew: Trash ..."
+
+brew install trash
+
+# -------
+
 echo "Installing from Homebrew: Git ..."
 
 brew install git

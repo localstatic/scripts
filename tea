@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This probably only works on a Mac (because of `say`) and requires that `utimer` be installed (`brew install utimer`)
+
+if [[ -z $1 ]]; then
+  echo "Usage: ${0} time_string"
+  exit 1
+else
+  COUNTDOWN_TIME=$1
+fi
+
+utimer -c $COUNTDOWN_TIME
+
+if [[ $? -eq 0 ]]; then
+  # TODO: Do this stuff in a more cross-platform way
+  say -v Moira "it's tea time"
+  osascript -e 'display dialog "Tea is done" buttons "OK" default button 1 with title "Tea" with icon stop'
+fi

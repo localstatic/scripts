@@ -37,6 +37,12 @@ brew install the_silver_searcher
 
 # -------
 
+echo "Installing from Homebrew: Trash ..."
+
+brew install trash
+
+# -------
+
 echo "Installing from Homebrew: Git ..."
 
 brew install git
@@ -57,37 +63,43 @@ brew cask install macvim
 
 echo "Installing from Homebrew Cask: iTerm2 ..."
 
-brew cask install --appdir="/Applications" iterm2
+brew cask install iterm2
 
 # -------
 
 echo "Installing from Homebrew Cask: Google Chrome ..."
 
-brew cask install --appdir="/Applications" google-chrome
+brew cask install google-chrome
 
 # -------
 
 echo "Installing from Homebrew Cask: Mozilla Firefox ..."
 
-brew cask install --appdir="/Applications" firefox
+brew cask install firefox
 
 # -------
 
 echo "Installing from Homebrew Cask: Flash plugin ..."
 
-brew cask install --appdir="/Applications" flash
+brew cask install flash
 
 # -------
 
 echo "Installing from Homebrew Cask: Tower ..."
 
-brew cask install --appdir="/Applications" tower
+brew cask install tower
 
 # -------
 
 echo "Installing from Homebrew Cask: DiffMerge ..."
 
-brew cask install --appdir="/Applications" diffmerge
+brew cask install diffmerge
+
+# -------
+
+echo "Installing from Homebrew Cask: Dash ..."
+
+brew cask install dash
 
 # -------
 
@@ -99,13 +111,13 @@ brew cask install --appdir="/Applications" vagrant
 
 echo "Installing from Homebrew Cask: Vagrant Manager ..."
 
-brew cask install --appdir="/Applications" vagrant-manager
+brew cask install vagrant-manager
 
 # -------
 
 echo "Installing from Homebrew Cask: VirtualBox ..."
 
-brew cask install --appdir="/Applications" virtualbox
+brew cask install virtualbox
 
 # -------
 

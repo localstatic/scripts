@@ -55,6 +55,12 @@ brew install bash-completion
 
 # -------
 
+echo "Installing from Homebrew Cask: Hack font ..."
+
+brew cask install caskroom/fonts/font-hack
+
+# -------
+
 echo "Installing from Homebrew Cask: MacVim ..."
 
 brew cask install macvim

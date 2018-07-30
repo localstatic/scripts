@@ -23,7 +23,7 @@ verbose=0
 
 function usage () {
 	echo "Usage:"
-	echo "  $( basename "${0}" ) [options] version_number "
+	echo "  $( basename "${0}" ) [options]"
 	echo 
 	echo "  Options include: "
 	echo "    -h             Display this help message."
@@ -55,13 +55,6 @@ while getopts ":hvt:" opt; do
 	esac
 done
 shift $((OPTIND -1))
-
-#if [[ -z $1 ]]; then
-	#usage
-	#exit 1
-#else
-	#release_version=$1
-#fi
 
 #
 

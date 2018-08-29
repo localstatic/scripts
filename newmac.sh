@@ -18,12 +18,6 @@ echo
 
 # ========== #
 
-echo "Installing Composer ..."
-
-curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin
-
-# -------
-
 echo "Installing Homebrew ..."
 
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -109,18 +103,6 @@ brew cask install dash
 
 # -------
 
-echo "Installing from Homebrew Cask: Vagrant ..."
-
-brew cask install --appdir="/Applications" vagrant
-
-# -------
-
-echo "Installing from Homebrew Cask: Vagrant Manager ..."
-
-brew cask install vagrant-manager
-
-# -------
-
 echo "Installing from Homebrew Cask: VirtualBox ..."
 
 brew cask install virtualbox
@@ -172,12 +154,6 @@ echo "Configuring MacVim using localstatic/vimrc ..."
 
 git clone git@github.com:localstatic/vimrc.git ~/Configs/vimrc
 ~/Configs/vimrc/setup.sh
-
-# -------
-
-echo "Installing Composer package: PHP CodeSniffer"
-
-composer global require "squizlabs/php_codesniffer=*"
 
 # -------
 

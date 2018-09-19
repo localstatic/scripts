@@ -7,7 +7,6 @@ curl 'https://backend.thefoodtruckleague.com/events/?days=5&name=The%20Gateway' 
   -H 'Referer: https://thefoodtruckleague.com/food-truck-finder/' \
   -H 'Origin: https://thefoodtruckleague.com'  \
   -H 'DNT: 1' \
-  -H 'Connection: keep-alive' \
   -H 'Pragma: no-cache' \
   -H 'Cache-Control: no-cache' \
   -s \

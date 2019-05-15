@@ -1,6 +1,14 @@
 #!/usr/bin/env bash
 
-curl 'https://backend.thefoodtruckleague.com/events/?days=5&name=The%20Gateway' \
+if [[ ! -z "$1" ]]; then
+  name=$1
+else
+  name="The Gateway"
+fi
+
+name=${name// /%20}
+
+curl "https://backend.thefoodtruckleague.com/events/?days=5&name=${name}" \
   -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:61.0) Gecko/20100101 Firefox/61.0' \
   -H 'Accept: application/json, text/plain, */*' \
   -H 'Accept-Language: en-US,en;q=0.5' --compressed \

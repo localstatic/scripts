@@ -71,11 +71,26 @@ echo "Backing up .env files in ${base_source_dir} ... "
 ## Get it done
 
 files=`find ${base_source_dir} -name .env`
+date=`date +%Y%m%d%H%M%S`
+
+dest_dir_bydate="${target_dir}/by_date/${date}"
+if [ ! -d "${dest_dir_bydate}" ]; then
+	if [ $verbose -gt 0 -o $DEBUG -ne 0 ]; then
+		echo "Date-based destination directory missing. Creating ${dest_dir_bydate} ..."
+	fi
+
+	mkdir -p "${dest_dir_bydate}"
+fi
+
 
 for file in $files; do
 	dest_file="${file/${base_source_dir}/${target_dir}}"
 	dest_dir="$( dirname "$dest_file" )"
-	dest_file="${dest_dir}/env.$( date +%Y%m%d%H%M%S )"
+	dest_file="${dest_dir}/env.${date}"
+
+	dest_file_bydate="${dest_dir##${target_dir}}.env"
+	dest_file_bydate="${dest_file_bydate//\//-}"
+	dest_file_bydate="${dest_dir_bydate}/${dest_file_bydate#-}"
 
 	if [ ! -d "${dest_dir}" ]; then
 		if [ $verbose -gt 0 -o $DEBUG -ne 0 ]; then
@@ -86,4 +101,5 @@ for file in $files; do
 	fi
 
 	cp -v "${file}" "${dest_file}"
+	ln -s "${dest_file}" "${dest_file_bydate}"
 done

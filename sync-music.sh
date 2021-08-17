@@ -25,7 +25,7 @@ if [[ $? -gt 0 ]]; then
   exit
 fi
 
-rsync -av --delete "${SOURCE}" "${DESTINATION}" 2>&1 | tee $tmpfile
+rsync -aP --delete "${SOURCE}" "${DESTINATION}" 2>&1 | tee $tmpfile
 
 echo
 echo "Sync complete. Results saved to ${tmpfile}"

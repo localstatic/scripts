@@ -10,7 +10,7 @@ if [[ -z $SOURCE || -z $DESTINATION ]]; then
   exit 1
 fi
 
-echo "Syncing from ${SOURCE} to ${DESTINATION}."
+echo "Syncing from '${SOURCE}' to '${DESTINATION}'."
 echo "Proceed? (y/N)"
 read -n 1
 

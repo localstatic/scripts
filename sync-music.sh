@@ -19,7 +19,7 @@ if [[ $REPLY != 'y' && $REPLY != 'Y' ]]; then
   exit
 fi
 
-tmpfile=$(mktemp -t sync-music)
+tmpfile=$(mktemp -t sync-music.XXX)
 if [[ $? -gt 0 ]]; then
   echo "Unable to create temp file for sync output."
   exit
